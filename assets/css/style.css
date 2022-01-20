@@ -69,8 +69,7 @@ nav ul li p {
 #red-container {
   width: 100%;
   background-color: #c70039;
-  height: 30vh;
-  padding: 10px;
+  height: 10px;
 }
 
 .project-container {
@@ -104,4 +103,13 @@ nav ul li p {
   height: 60vh;
   position: absolute;
   right: 20%;
+}
+
+@media (max-width: 960px) {
+  .hero .graphic svg {
+    width: 90%;
+    height: auto;
+    position: absolute;
+    top: 50vh;
+  }
 }
