@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+:root {
+  --background-color: #200f21;
+  --text-color: #fff;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: var(--background-color);
+  height: 100%;
+  max-width: 100%;
+  position: relative;
+  color: var(--text-color);
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.center {
+  text-align: center;
+}
+
+.body-container {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  width: 100vw;
+}
+
+.scroll-section {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+.hero {
+  padding: 10px;
+  position: relative;
+}
+
+.hero .graphic svg {
+  width: 70%;
+  height: auto;
+  position: absolute;
+  top: 30vh;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li p {
+  margin-right: 68vw;
+}
+
+#red-container {
+  width: 100%;
+  background-color: #c70039;
+  height: 30vh;
+  padding: 10px;
+}
+
+.project-container {
+  color: #000;
+  padding: 50px;
+  position: relative;
+  margin-left: 50px;
+}
+
+.project-container h3 {
+  position: relative;
+  z-index: 1;
+}
+
+.project-container h3::before {
+  content: "";
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background-color: #fff;
+  height: 6rem;
+  width: 6rem;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: -45px;
+  left: -40px;
+  box-shadow: -3px 3px 15px 2px #000;
+}
+
+.device-mockup {
+  height: 60vh;
+  position: absolute;
+  right: 20%;
+}
