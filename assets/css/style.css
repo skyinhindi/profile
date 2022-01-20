@@ -112,4 +112,8 @@ nav ul li p {
     position: absolute;
     top: 50vh;
   }
+
+  nav ul li p {
+    margin-right: 60vw;
+  }
 }
