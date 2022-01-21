@@ -4,6 +4,7 @@
   --background-color: #200f21;
   --text-color: #fff;
   --theme-color-one: #900c3f;
+  --theme-color-two: #f6f740;
 }
 
 body {
@@ -35,6 +36,23 @@ a {
   text-align: center;
 }
 
+.flex {
+  display: flex;
+}
+
+.btn {
+  border: 3px solid var(--theme-color-one);
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1.2em;
+  transition: 0.2s ease;
+}
+
+.btn:hover {
+  background-color: var(--theme-color-one);
+  border: 3px solid var(--theme-color-two);
+}
+
 .body-container {
   height: 100vh;
   scroll-snap-type: y mandatory;
@@ -45,7 +63,6 @@ a {
 .scroll-section {
   height: 100vh;
   scroll-snap-align: start;
-  padding: 50px;
 }
 
 .hero {
@@ -65,82 +82,83 @@ a {
   top: 30vh;
 }
 
-.project-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 20px;
+.circle-1 {
+  animation: bounce 2s ease-in-out infinite;
 }
 
-.card {
-  height: 300px;
-  width: 220px;
-  border-radius: 5px;
-  /* padding: 10px; */
-  margin: 0 auto;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-  background-color: var(--theme-color-one);
+#slideshow-frame {
+  width: 45%;
 }
 
-#the-magazine {
-  background-color: #fffc00;
-  color: #000;
+#slideshow-text {
+  align-self: center;
+  justify-self: center;
+  margin: 20px;
 }
 
-#anonmail {
-  background-color: #000;
+#slideshow-text h3 {
+  font-size: 2.5em;
+  position: relative;
 }
 
-#my-hostel {
-  background-color: rgb(216, 113, 16);
+#slideshow-text h3::before {
+  content: "</>";
+  position: absolute;
+  color: var(--theme-color-one);
+  top: -50px;
+  z-index: -1;
 }
 
-#mindful {
-  background-color: #936df7;
+#contact {
+  position: relative;
+  width: 100vw;
+  padding: 40px;
 }
 
-#peer-tutoring {
-  background-color: #ff8095;
+#contact h1 {
+  color: var(--theme-color-one);
+  font-size: 3em;
 }
 
-#nayyan {
-  background-color: #f2994a;
-}
-
-.project-container h3 {
-  font-size: 1.4em;
-}
-
-.project-container section {
-  height: 20%;
-  width: 100%;
-}
-
-/* .project-container h3::before {
+#contact h1::before {
   content: "";
   border: 2px solid #fff;
   border-radius: 50%;
   background-color: #fff;
-  height: 6rem;
-  width: 6rem;
+  height: 2.2em;
+  width: 2.2em;
   display: block;
-  position: absolute;
+  position: relative;
   z-index: -1;
-  top: -45px;
-  left: -40px;
+  top: 60px;
+  left: -20px;
   box-shadow: -3px 3px 15px 2px #000;
-} */
+}
 
 @media (max-width: 960px) {
   .hero .graphic svg {
-    width: 90%;
+    width: 100%;
     height: auto;
     position: absolute;
     top: 50vh;
   }
 
-  .project-grid {
-    grid-template-columns: 1fr;
+  .hero p {
+    font-size: 1.7em;
+    text-align: center;
+    margin-left: 0;
+    margin-top: 60px;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    top: 30vh;
+  }
+  50% {
+    top: 99vh;
+  }
+  100% {
+    top: 30vh;
   }
 }
