@@ -301,7 +301,7 @@ button {
   }
 
   #onTheGo {
-    background-image: url("../images/onthego-mobile.PNG");
+    background-image: url("../images/onthego-mobile.png");
   }
 
   #mindful {
@@ -315,5 +315,10 @@ button {
   #slideshow {
     height: 30vh;
     width: auto;
+  }
+
+  #slideshow-text h3 {
+    font-size: 2em;
+    position: relative;
   }
 }
