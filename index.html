@@ -87,8 +87,9 @@
 
         </div>
       </div>
-      <div class="scroll-section flex" id="project-preview-section">
-        <img id="slideshow-frame" src="./assets/images/desktop.svg" />
+      <div class="scroll-section flex" id="projectPreviewSection">
+        <!-- <img id="slideshow-frame" src="./assets/images/desktop.svg" /> -->
+        <img src="./assets/images/slideshow-1.png" id="slideshow" name="slideshow" />
         <section id="slideshow-text">
           <h3>I imagine, design and develop websites and applications! </h3>
           <button onclick="projectOpen()" class="btn">See Projects</button>
@@ -116,9 +117,7 @@
           <a href="http://themagazine.herokuapp.com/">
             <section class="project" id="theMagazine">
               <h4>The Magazine</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptate officia odit. Aliquam explicabo
-                suscipit accusamus est voluptatibus enim a, labore perspiciatis quas nostrum assumenda maiores nihil
-                saepe. Minus, sunt!</p>
+              <p>A blog built on the MERN stack.</p>
             </section>
           </a>
         </div>
@@ -126,9 +125,7 @@
           <a href="http://mailer-anonmail.herokuapp.com/">
             <section class="project" id="anonmail">
               <h4>Anonmail</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptate officia odit. Aliquam explicabo
-                suscipit accusamus est voluptatibus enim a, labore perspiciatis quas nostrum assumenda maiores nihil
-                saepe. Minus, sunt!</p>
+              <p>Anonymous Email Service built on the MERN stack.</p>
             </section>
           </a>
         </div>
@@ -136,9 +133,7 @@
           <a href="#">
             <section class="project" id="myHostel">
               <h4>MyHostel</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptate officia odit. Aliquam explicabo
-                suscipit accusamus est voluptatibus enim a, labore perspiciatis quas nostrum assumenda maiores nihil
-                saepe. Minus, sunt!</p>
+              <p>Hostel Utilities and Management Platform built using NodeJS, Express, EJS and MYSQL.</p>
             </section>
           </a>
         </div>
@@ -146,9 +141,8 @@
           <a href="#">
             <section class="project" id="productInfoSearch">
               <h4>Product Information Search</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptate officia odit. Aliquam explicabo
-                suscipit accusamus est voluptatibus enim a, labore perspiciatis quas nostrum assumenda maiores nihil
-                saepe. Minus, sunt!</p>
+              <p>Platform to parse unorganized XML files and return queried fields for Manufacturing entities. Built
+                using NodeJS and Express.</p>
             </section>
           </a>
         </div>
@@ -156,9 +150,8 @@
           <a href="#">
             <section class="project" id="onTheGo">
               <h4>On The Go</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptate officia odit. Aliquam explicabo
-                suscipit accusamus est voluptatibus enim a, labore perspiciatis quas nostrum assumenda maiores nihil
-                saepe. Minus, sunt!</p>
+              <p>Webapp which allows users to lodge infrastructure complaints across their city. Built on the MERN
+                stack.</p>
             </section>
           </a>
         </div>
@@ -166,9 +159,8 @@
           <a href="#">
             <section class="project" id="mindful">
               <h4>Mindful</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptate officia odit. Aliquam explicabo
-                suscipit accusamus est voluptatibus enim a, labore perspiciatis quas nostrum assumenda maiores nihil
-                saepe. Minus, sunt!</p>
+              <p>An app for students and young individuals to track their mental health. Built using ReactNative, NodeJS
+                and our own ML algorithm.</p>
             </section>
           </a>
         </div>
@@ -176,19 +168,8 @@
           <a href="#">
             <section class="project" id="peerTutoring">
               <h4>Peer Tutoring</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptate officia odit. Aliquam explicabo
-                suscipit accusamus est voluptatibus enim a, labore perspiciatis quas nostrum assumenda maiores nihil
-                saepe. Minus, sunt!</p>
-            </section>
-          </a>
-        </div>
-        <div class="project-wrapper">
-          <a href="#">
-            <section class="project" id="productInfoSearch">
-              <h4>Product Information Search</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptate officia odit. Aliquam explicabo
-                suscipit accusamus est voluptatibus enim a, labore perspiciatis quas nostrum assumenda maiores nihil
-                saepe. Minus, sunt!</p>
+              <p>An app where users can find peers in their vicinity to help tutor them in any subject of their choice.
+                Built using ReactNative, Firebase and NodeJS.</p>
             </section>
           </a>
         </div>
@@ -211,6 +192,26 @@
       projectSection.style.display = "none";
       mainSection.style.display = "block";
     }
+
+    let i = 0;
+    let images = [];
+    images[0] = ['./assets/images/slideshow-1.png'];
+    images[1] = ['./assets/images/slideshow-2.png'];
+    images[2] = ['./assets/images/slideshow-3.png'];
+    images[3] = ['./assets/images/slideshow-4.png'];
+    function changeImg() {
+      document.slideshow.src = images[i];
+      if (i < 3) {
+        i++;
+      }
+      else {
+        i = 0;
+      }
+      setTimeout("changeImg()", 3000);
+    }
+
+    window.onload = changeImg;
+
   </script>
 </body>
 

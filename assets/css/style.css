@@ -106,12 +106,15 @@ button {
   top: 30vh;
 }
 
-.circle-1 {
-  animation: bounce 2s ease-in-out infinite;
+#projectPreviewSection {
+  padding-top: 0;
+  justify-content: center;
+  align-items: center;
 }
 
-#slideshow-frame {
-  width: 45%;
+#slideshow {
+  height: 80vh;
+  width: auto;
 }
 
 #slideshow-text {
@@ -137,6 +140,10 @@ button {
   position: relative;
   width: 100vw;
   padding: 40px;
+}
+
+#contact a:hover {
+  color: #2196f3;
 }
 
 #contact h1 {
@@ -209,7 +216,7 @@ button {
 }
 
 #productInfoSearch {
-  background-image: url(../images/productinfosearch.PNG);
+  background-image: url(../images/productinfosearch.jpg);
 }
 
 #onTheGo {
@@ -217,11 +224,11 @@ button {
 }
 
 #mindful {
-  background-image: url("../images/mindful.png");
+  background-image: url("../images/mindful.jpg");
 }
 
 #peerTutoring {
-  background-image: url("../images/peertutoring.png");
+  background-image: url("../images/peertutoring.jpg");
 }
 
 #theMagazine:hover,
@@ -266,7 +273,7 @@ button {
     flex: 1 0 49%;
   }
 
-  #project-preview-section {
+  #projectPreviewSection {
     display: block;
     text-align: center;
     padding-top: 25%;
@@ -274,5 +281,39 @@ button {
 
   #projectSection {
     overflow-y: scroll;
+    font-size: 0.8em;
+  }
+
+  #theMagazine {
+    background-image: url("../images/themagazine-mobile.png");
+  }
+
+  #anonmail {
+    background-image: url(../images/anonmail-mobile.PNG);
+  }
+
+  #myHostel {
+    background-image: url(../images/myhostel.PNG);
+  }
+
+  #productInfoSearch {
+    background-image: url(../images/productinfosearch.jpg);
+  }
+
+  #onTheGo {
+    background-image: url("../images/onthego-mobile.PNG");
+  }
+
+  #mindful {
+    background-image: url("../images/mindful-mobile.jpg");
+  }
+
+  #peerTutoring {
+    background-image: url("../images/peertutoring-mobile.JPG");
+  }
+
+  #slideshow {
+    height: 30vh;
+    width: auto;
   }
 }
