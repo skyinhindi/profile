@@ -271,4 +271,8 @@ button {
     text-align: center;
     padding-top: 25%;
   }
+
+  #projectSection {
+    overflow-y: scroll;
+  }
 }
