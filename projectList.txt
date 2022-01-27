@@ -1,7 +1,7 @@
-the magazine
-anonmail
-myhostel
-nayyan
+//the magazine
+//anonmail
+//myhostel
+//onTheGo
 mindful
 peer tutoring
-product information search dell
+//product information search dell

@@ -40,12 +40,32 @@ a {
   display: flex;
 }
 
+button {
+  background: none transparent;
+  border: none;
+  border-spacing: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: normal;
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+  text-align: inherit;
+  text-decoration: none;
+  text-indent: 0;
+  color: inherit;
+}
+
 .btn {
   border: 3px solid var(--theme-color-one);
   border-radius: 10px;
   padding: 10px;
   font-size: 1.2em;
   transition: 0.2s ease;
+}
+
+.round {
+  border-radius: 25px;
 }
 
 .btn:hover {
@@ -58,6 +78,10 @@ a {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   width: 100vw;
+}
+
+#mainSection {
+  display: block;
 }
 
 .scroll-section {
@@ -135,6 +159,94 @@ a {
   box-shadow: -3px 3px 15px 2px #000;
 }
 
+#projectSection {
+  display: none;
+  padding: 50px;
+  margin-top: 4%;
+  position: relative;
+}
+
+#projectCloseBtn {
+  position: absolute;
+  right: 3%;
+  top: 5%;
+}
+
+#projectsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-wrapper {
+  height: 300px;
+  width: 260px;
+  flex: 1 0 21%;
+}
+
+.project {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  transition: 0.5s ease;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#theMagazine {
+  background-image: url("../images/themagazine.png");
+}
+
+#anonmail {
+  background-image: url(../images/anonmail.PNG);
+}
+
+#myHostel {
+  background-image: url(../images/myhostel.PNG);
+}
+
+#productInfoSearch {
+  background-image: url(../images/productinfosearch.PNG);
+}
+
+#onTheGo {
+  background-image: url("../images/onthego.PNG");
+}
+
+#mindful {
+  background-image: url("../images/mindful.png");
+}
+
+#peerTutoring {
+  background-image: url("../images/peertutoring.png");
+}
+
+#theMagazine:hover,
+#anonmail:hover,
+#myHostel:hover,
+#productInfoSearch:hover,
+#onTheGo:hover,
+#mindful:hover,
+#peerTutoring:hover {
+  background-image: linear-gradient(#000, #333);
+  transform: scale(1.1);
+}
+
+.project * {
+  display: none;
+}
+
+.project h4 {
+  color: #dd085a;
+}
+
+.project:hover * {
+  display: block;
+}
+
 @media (max-width: 960px) {
   .hero .graphic svg {
     width: 100%;
@@ -149,16 +261,14 @@ a {
     margin-left: 0;
     margin-top: 60px;
   }
-}
 
-@keyframes bounce {
-  0% {
-    top: 30vh;
+  .project-wrapper {
+    flex: 1 0 49%;
   }
-  50% {
-    top: 99vh;
-  }
-  100% {
-    top: 30vh;
+
+  #project-preview-section {
+    display: block;
+    text-align: center;
+    padding-top: 25%;
   }
 }
