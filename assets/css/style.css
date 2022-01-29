@@ -208,19 +208,19 @@ button {
 }
 
 #anonmail {
-  background-image: url(../images/anonmail.png);
+  background-image: url("../images/anonmail.jpg");
 }
 
 #myHostel {
-  background-image: url(../images/myhostel.png);
+  background-image: url("../images/myhostel.png");
 }
 
 #productInfoSearch {
-  background-image: url(../images/productinfosearch.jpg);
+  background-image: url("../images/productinfosearch.jpg");
 }
 
 #onTheGo {
-  background-image: url("../images/onthego.png");
+  background-image: url("../images/onthego.jpg");
 }
 
 #mindful {
@@ -289,15 +289,15 @@ button {
   }
 
   #anonmail {
-    background-image: url(../images/anonmail-mobile.png);
+    background-image: url("../images/anonmail-mobile.png");
   }
 
   #myHostel {
-    background-image: url(../images/myhostel.png);
+    background-image: url("../images/myhostel.png");
   }
 
   #productInfoSearch {
-    background-image: url(../images/productinfosearch.jpg);
+    background-image: url("../images/productinfosearch.jpg");
   }
 
   #onTheGo {
