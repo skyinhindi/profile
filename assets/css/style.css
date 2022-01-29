@@ -285,15 +285,15 @@ button {
   }
 
   #theMagazine {
-    background-image: url("../images/themagazine-mobile.png");
+    background-image: url("../images/themagazine-mobile.jpg");
   }
 
   #anonmail {
-    background-image: url("../images/anonmail-mobile.png");
+    background-image: url("../images/anonmail-mobile.jpg");
   }
 
   #myHostel {
-    background-image: url("../images/myhostel.png");
+    background-image: url("../images/myhostel.jpg");
   }
 
   #productInfoSearch {
@@ -301,7 +301,7 @@ button {
   }
 
   #onTheGo {
-    background-image: url("../images/onthego-mobile.png");
+    background-image: url("../images/onthego-mobile.jpg");
   }
 
   #mindful {
